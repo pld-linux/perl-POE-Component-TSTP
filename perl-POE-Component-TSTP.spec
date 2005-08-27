@@ -5,25 +5,32 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	POE
 %define		pnam	Component-TSTP
-Summary:	POE::Component::TSTP - perl module
+Summary:	POE::Component::TSTP - a POE component to handle Ctrl-Z
+Summary(pl):	POE::Component::TSTP - komponent POE obs³uguj±cy Ctrl-Z
 Name:		perl-POE-Component-TSTP
 Version:	0.02
 Release:	0.1
-License:	same as perl
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-URL:		poe.perl.org
+# Source0-md5:	0ac0dafa63a99b3e305e073e30bb9f22
+URL:		http://poe.perl.org/
+BuildRequires:	perl-POE
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
-BuildRequires:	perl-POE
-%if %{with tests}
-BuildRequires:	perl-POE
-%endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-POE component handling SIGTSTP, ctrl-z usually.
+POE component handling SIGTSTP, Ctrl-Z usually. By default, POE
+applications do not respond to Ctrl-Z due to slightly strange signal
+handling semantics. This module fixes that.
+
+%description -l pl
+Komponent POE obs³uguj±cy SIGTSTP, czyli zwykle Ctrl-Z. Domy¶lnie
+aplikacje POE nie reaguj± na Ctrl-Z ze wzglêdu na nieco dziwn±
+semantykê obs³ugi sygna³ów. Ten modu³ poprawia to.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
