@@ -9,7 +9,7 @@ Summary:	POE::Component::TSTP - a POE component to handle Ctrl-Z
 Summary(pl):	POE::Component::TSTP - komponent POE obs³uguj±cy Ctrl-Z
 Name:		perl-POE-Component-TSTP
 Version:	0.02
-Release:	0.1
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
