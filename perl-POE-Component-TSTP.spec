@@ -6,7 +6,7 @@
 %define		pdir	POE
 %define		pnam	Component-TSTP
 Summary:	POE::Component::TSTP - a POE component to handle Ctrl-Z
-Summary(pl):	POE::Component::TSTP - komponent POE obs³uguj±cy Ctrl-Z
+Summary(pl.UTF-8):   POE::Component::TSTP - komponent POE obsÅ‚ugujÄ…cy Ctrl-Z
 Name:		perl-POE-Component-TSTP
 Version:	0.02
 Release:	1
@@ -27,10 +27,10 @@ POE component handling SIGTSTP, Ctrl-Z usually. By default, POE
 applications do not respond to Ctrl-Z due to slightly strange signal
 handling semantics. This module fixes that.
 
-%description -l pl
-Komponent POE obs³uguj±cy SIGTSTP, czyli zwykle Ctrl-Z. Domy¶lnie
-aplikacje POE nie reaguj± na Ctrl-Z ze wzglêdu na nieco dziwn±
-semantykê obs³ugi sygna³ów. Ten modu³ poprawia to.
+%description -l pl.UTF-8
+Komponent POE obsÅ‚ugujÄ…cy SIGTSTP, czyli zwykle Ctrl-Z. DomyÅ›lnie
+aplikacje POE nie reagujÄ… na Ctrl-Z ze wzglÄ™du na nieco dziwnÄ…
+semantykÄ™ obsÅ‚ugi sygnaÅ‚Ã³w. Ten moduÅ‚ poprawia to.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
